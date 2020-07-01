@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+// главная страница
+Route::get('/','IndexController@execute', ['as'=>'/home']);
+
+//Route::get();
+
+Route::auth();
+
+/*Route::get('/home', 'HomeController@index');*/
